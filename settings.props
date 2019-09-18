@@ -1,0 +1,32 @@
+# Base File paths
+mesh file=data/mesh.csv
+average face shape=data/sh_000.csv
+shape weights=data/sh_ev.csv
+average face color=data/tx_000.csv
+color weights=data/tx_ev.csv
+
+# Face Selector
+shape prefix=data/sh_
+texture prefix=data/tx_
+filename suffix=.csv
+face selector field max height=0.2
+face selector face scaling=0.0007
+face selector initial weight=0.333
+
+# Face Interpolator
+face interpolator selector width=0.1
+face interpolator selector height=0.2
+triangle selection radius=0.0075
+synthesise button width=0.1
+synthesise button height=0.05
+
+# Synthesised Renderer
+synthesised screen fit factor=0.004
+# 0.25 radians is a little less than 15 degrees.
+rotation step=0.25
+lighting r=255
+lighting g=225
+lighting b=200
+preset point light source x=0.0
+preset point light source y=0.0
+preset point light source z=-1000.0
